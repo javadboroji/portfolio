@@ -4,13 +4,17 @@ import Avatar from "./Components/Home/Avatar";
 import Navgation from "./Components/Navgation";
 import ThemeColor from "./Components/ThemeColorCustom";
 import React, { useEffect, useState } from 'react'
-import Description from "./Components/Home/Description";
 import { ConfigProvider } from 'antd';
+import Description from "./Components/Home/Description";
+import About from "./Components/About/About";
 
 export default function Home() {
   const [themeDark, setThemeDark] = useState(false);
+  const [activeItem, setActiveItem] = useState("home")
   useEffect(() => {
-  }, [themeDark])
+    console.log(activeItem);
+
+  }, [themeDark, activeItem])
 
 
   return (
@@ -18,12 +22,19 @@ export default function Home() {
       <div className={`${themeDark ? 'dark' : 'light'}`}>
         <main className="bg-white dark:bg-black min-h-screen">
           <ThemeColor themeDark={themeDark} setThemeDark={setThemeDark} />
-          
-          <Row style={{ display: 'flex' ,justifyContent:'center'}}>
-            <Navgation />
+
+          <Row style={{ display: 'flex', justifyContent: 'center' }}>
+            <Navgation setActiveItem={setActiveItem} activeItem={activeItem} />
             <div className="avatar-bg"></div>
-            <Description />
-            <Avatar />
+
+            {
+              activeItem === 'home' ?
+               <>
+               <Description />
+                <Avatar />
+                </> :
+                <About />
+            }
           </Row>
         </main>
       </div>
