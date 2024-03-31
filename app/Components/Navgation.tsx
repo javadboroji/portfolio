@@ -33,8 +33,8 @@ const Navgation: React.FC<NavgationProps> = ({ setActiveItem ,activeItem}) => {
   }, [navgationHover])
 
   return (
-    <div className='flex items-start flex-col fixed top-[30%] z-10 right-8'>
-      <div onMouseEnter={() => hoverItem('home')} onMouseLeave={clearState}  className={` flex items-center p-4 rounded-full ${activeItem==='home'?'bg-yellow-500':'bg-zinc-900'} hover:bg-yellow-500 mb-3`}>
+    <div className='flex items-start lg:flex-col fixed top-[5%] lg:top-[30%] z-10 right-auto  left-auto lg:right-8'>
+      <div onMouseEnter={() => hoverItem('home')} onMouseLeave={clearState}  className={` flex items-center p-4 rounded-full ${activeItem==='home'?'bg-yellow-500':'bg-zinc-900'} hover:bg-yellow-500 mx-4 lg:mx-0 lg:mb-3`}>
         <button onClick={() => changeActiveNav('home')}> <FaHome fontSize={21} color='#fff' /></button>
         {navgationHover === 'home' ? <span data-aos={navgationHover === 'home' ? "fade-left" : ''} className='font-medium text-base text-white mr-6'> خانه</span> : ''}
 

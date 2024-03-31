@@ -45,7 +45,7 @@ p,span,a,h1,h2,h3,h4,h5,h6{
   height: 100%;
   margin: 2rem 1rem;
   box-shadow: 0 0 7px rgba(0,0,0,.9);
-  padding-top: 120%;
+  padding-top: 110%;
   overflow: hidden;
   border-radius: 16px;
     & img{
@@ -78,4 +78,14 @@ p,span,a,h1,h2,h3,h4,h5,h6{
 .filter-img{
   filter: blur(0.5);
   transform: translate(-50%);
+}
+@media screen and (max-width: 772px) {
+  .avatar-bg {
+    display: none;
+  }
+  .avatar-box{
+    padding-top: 100%;
+    margin: 1rem 0;
+
+  }
 }
