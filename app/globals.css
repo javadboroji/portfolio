@@ -72,4 +72,10 @@ p,span,a,h1,h2,h3,h4,h5,h6{
     height: calc(100% + 1.5rem);
     background-color: gray;
   }
-
+.animation-deley{
+  transition: ease-in-out 0.3s all;
+}
+.filter-img{
+  filter: blur(0.5);
+  transform: translate(-50%);
+}

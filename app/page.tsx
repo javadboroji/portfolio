@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react'
 import { ConfigProvider } from 'antd';
 import Description from "./Components/Home/Description";
 import About from "./Components/About/About";
+import Portfilo from "./Components/Portfolio/Portfilo";
 
 export default function Home() {
   const [themeDark, setThemeDark] = useState(false);
@@ -29,11 +30,12 @@ export default function Home() {
 
             {
               activeItem === 'home' ?
-               <>
-               <Description />
-                <Avatar />
-                </> :
-                <About />
+                <>
+                  <Description />
+                  <Avatar />
+                </> : activeItem === 'about' ?
+                  <About />
+                  :<Portfilo/>
             }
           </Row>
         </main>
