@@ -60,12 +60,7 @@ const Navgation: React.FC<NavgationProps> = ({ setActiveItem ,activeItem}) => {
 
       </div>
 
-      <div onMouseEnter={() => hoverItem('blog')} onMouseLeave={clearState} className={`flex items-center p-4 rounded-full ${activeItem==='blog'?'bg-yellow-500':'bg-zinc-900'} hover:bg-yellow-500 mb-3`}>
-        <button onClick={() => changeActiveNav('blog')}>   <IoChatbubbles fontSize={21} color='#fff' /></button>
-        {navgationHover === 'blog' ? <span data-aos={navgationHover === 'blog' ? "fade-left" : ''} className='font-medium text-base text-white mr-6'> وبلاگ </span> : ''}
 
-
-      </div>
 
     </div>
   )

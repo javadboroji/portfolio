@@ -8,7 +8,7 @@ import { ConfigProvider } from 'antd';
 import Description from "./Components/Home/Description";
 import About from "./Components/About/About";
 import Portfilo from "./Components/Portfolio/Portfilo";
-
+import Contact from"./Components/Contact/Contact"
 export default function Home() {
   const [themeDark, setThemeDark] = useState(false);
   const [activeItem, setActiveItem] = useState("home")
@@ -35,7 +35,9 @@ export default function Home() {
                   <Avatar />
                 </> : activeItem === 'about' ?
                   <About />
-                  :<Portfilo/>
+                  : activeItem === 'portfolio' ?
+                  <Portfilo/>
+                  :<Contact/>
             }
           </Row>
         </main>
