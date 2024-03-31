@@ -1,6 +1,7 @@
-import React from 'react'
+'use client'
+import React,{useEffect} from 'react'
 import { Col, Flex, Progress } from 'antd';
-
+import AOS from "aos";
 function Skils() {
     const skils = [
         {
@@ -46,12 +47,17 @@ function Skils() {
             value:50
         }
     ]
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, [])
+    
     return (
         <Flex wrap="wrap" gap="small">
             {skils.map((item,i)=>{
                 return(
 
-            <Col key={i} xs={12} lg={6} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <Col data-aos="flip-up" key={i} xs={12} lg={6} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <Progress strokeColor={'#ffb400'} type="circle" percent={item.value} size={75} status='normal' format={(percent) => <span className='dark:text-white'>{percent}%</span>} />
                 <span className='text-yellow-500 text-2xl py-8'> {item.name}</span>
             </Col>

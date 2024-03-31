@@ -59,4 +59,17 @@ p,span,a,h1,h2,h3,h4,h5,h6{
       right: auto !important;
     }
   }
+  .experince-icon{
+    position: relative;
+  
+  }
+  .experince-icon::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    width: 1px;
+    height: calc(100% + 1.5rem);
+    background-color: gray;
+  }
 

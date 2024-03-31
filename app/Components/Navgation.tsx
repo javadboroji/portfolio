@@ -48,7 +48,7 @@ const Navgation: React.FC<NavgationProps> = ({ setActiveItem ,activeItem}) => {
 
       <div onMouseEnter={() => hoverItem('portfolio')} onMouseLeave={clearState} className={` flex items-center p-4 rounded-full ${activeItem==='portfolio'?'bg-yellow-500':'bg-zinc-900'} hover:bg-yellow-500 mb-3`}>
         <button onClick={() => changeActiveNav('portfolio')}>    <BsBagFill fontSize={21} color='#fff' /></button>
-        {navgationHover === 'portfolio' ? <span data-aos={navgationHover === 'portfolio' ? "fade-left" : ''} className='font-medium text-base text-white mr-6'>  گالری من </span> : ''}
+        {navgationHover === 'portfolio' ? <span data-aos={navgationHover === 'portfolio' ? "fade-left" : ''} className='font-medium text-base text-white mr-6'>  نمونه کارهای  من </span> : ''}
 
 
       </div>
