@@ -11,7 +11,7 @@ function Avatar() {
     AOS.refresh();
   }, []);
   return (
-    <Col xs={24} md={12} lg={12} >
+    <Col xs={22} md={12} lg={12} >
       <div className='avatar-box' data-aos="zoom-out">
       <Image alt='avatar' src={avatar} fill/>
     </div>

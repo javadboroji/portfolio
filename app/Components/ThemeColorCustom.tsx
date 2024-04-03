@@ -35,10 +35,12 @@ const ThemeColorCustom: React.FC<themeProps>=({themeDark,setThemeDark})=> {
   }
 
   return (
-    <div className="fixed lg:top-8 top-3 right-8 z-50">
+    <div className='relative'>
+      <div className="fixed lg:top-8 top-3 right-0 lg:right-8 z-50">
       <button onClick={themChangeHandler}>
         {themeDark ? <FaSun fontSize={'24'} color='#fff' /> : <FaMoon fontSize={'24'} />}
       </button>
+    </div>
     </div>
   )
 }

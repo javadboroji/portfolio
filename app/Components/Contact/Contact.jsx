@@ -6,7 +6,7 @@ import { FaSquarePhoneFlip } from "react-icons/fa6";
 
 export default function Contact() {
   return (
-    <div className="container my-8">
+    <div className="container px-2 my-8">
       <span className="dark:text-white mx-auto mt-12 block  text-center text-4xl py-4">
         {" "}
         تماس با <span className="text-yellow-500"> من</span>
@@ -14,16 +14,16 @@ export default function Contact() {
       <Row>
         <Col xs={24} lg={12}>
           <form className="my-8">
-            <Flex justify="space-between">
+            <Flex justify="space-between" className="flex-col lg:flex-row">
               <input
                 name="Name"
                 placeholder="نام"
-                className="w-[48%] rounded-lg p-4 bg-transparent border border-slate-500 dark:text-white my-2"
+                className="w-full lg:w-[48%] rounded-lg p-4 bg-transparent border border-slate-500 dark:text-white my-2"
               />
               <input
                 name="Email"
                 placeholder="ایمیل"
-                className="w-[48%] rounded-lg p-4 bg-transparent border border-slate-500 dark:text-white my-2"
+                className=" w-full lg:w-[48%] rounded-lg p-4 bg-transparent border border-slate-500 dark:text-white my-2"
               />
             </Flex>
             <input

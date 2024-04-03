@@ -25,8 +25,10 @@ export default function Home() {
         <main className="bg-white dark:bg-black min-h-screen">
           <ThemeColor themeDark={themeDark} setThemeDark={setThemeDark} />
 
-          <Row style={{ display: 'flex', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-            <Navgation setActiveItem={setActiveItem} activeItem={activeItem} />
+          <Row style={{ display: 'flex', justifyContent: 'center' }}>
+            <div className=" flex flex-wrap justify-center relative overflow-hidden bg-red-400 w-full">
+            <Navgation setActiveItem={setActiveItem} activeItem={activeItem}  />
+            </div>
             <div className="avatar-bg "></div>
             <div className="mt-32 lg:mt-8">
             {

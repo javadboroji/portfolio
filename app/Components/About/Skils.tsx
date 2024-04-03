@@ -53,7 +53,7 @@ function Skils() {
     }, [])
     
     return (
-        <Flex wrap="wrap" gap="small">
+        <Flex wrap="wrap" gap="small" className='justify-center lg:justify-start'>
             {skils.map((item,i)=>{
                 return(
 

@@ -3,7 +3,7 @@ import React from 'react'
 
 function Description() {
     return (
-        <Col xs={24} lg={12} >
+        <Col xs={22} lg={12} >
            <div className='flex flex-col items-center flex-col mx-4'>
            <p className='text-yellow-500 font-bold text-3xl text-right w-full  mb-4'> من جواد بروجی هستم</p>
             <p className=' dark:text-white text-black font-bold text-2xl text-right w-full mb-4 '> برنامه نویس فرانت</p>

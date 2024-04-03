@@ -29,18 +29,18 @@ export default function Portfilo() {
     }
     ]
     return (
-        <div className='container'>
+        <div className='lg:container'>
             <span className='dark:text-white mx-auto mt-12  w-full block text-center text-4xl py-4'> نمونه کار های من</span>
-            <Row style={{ display: 'flex', margin: '4rem 0' }} gutter={[48, 48]}>
+            <Row className='flex-col lg:flex-row' style={{ display: 'flex', margin: '4rem 0' }} gutter={[48, 48]}>
                 {projects?.map((item, i) => (
-                    <Col key={i} xs={12} lg={12}>
+                    <Col key={i} xs={24} lg={12} className='mb-4 lg:mb-0'>
                         <div className='relative overflow-hidden w-full h-full pt-[55%] animation-deley rounded-lg'>
                             <Link href={item.url}>
                                 <Image fill src={item.img} alt={item.title} objectFit={'cover'} style={{ padding: '0' }} className='hover:scale-110 hover:blur-sm hover:animation-deley animation-deley' />
 
                             </Link>
                         </div>
-                        <p className='text-xl text-yellow-500  leading-9 relative z-50 '>{item.title}</p>
+                        <p className='text-sm lg:text-xl text-yellow-500  leading-9 relative z-50 '>{item.title}</p>
                     </Col>))}
             </Row>
         </div>
