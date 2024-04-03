@@ -1,9 +1,9 @@
 import { Col, Flex, Row } from 'antd'
 import React from 'react'
-import rash from '@/public/rash.png';
-import danghe from '@/public/dan.png'
-import rasam from '@/public/rasam.png'
-import movie from '@/public/movie.png'
+import rash from '../../../public/rash.png';
+import danghe from '../../../public/dan.png'
+import rasam from '../../../public/rasam.png'
+import movie from '../../../public/movie.png'
 import Image from 'next/image'
 import Link from 'next/link';
 
