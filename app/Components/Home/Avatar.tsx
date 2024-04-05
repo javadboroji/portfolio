@@ -1,7 +1,7 @@
 'use clie'
 import Image from 'next/image'
 import React,{useEffect} from 'react'
-import avatar from'@/public/avatar.jpg'
+import avatar from'@/public/123.jpg'
 import { Col } from 'antd'
 import AOS from "aos";
 import "aos/dist/aos.css";

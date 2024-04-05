@@ -48,15 +48,23 @@ p,span,a,h1,h2,h3,h4,h5,h6{
   padding-top: 110%;
   overflow: hidden;
   border-radius: 16px;
+  background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
     & img{
       position: absolute !important;
       top: 50% !important;
       left: 50% !important;
       transform: translate(-50%,-50%) !important; 
-      width: 100%;
-      height: 100%;
+      width: 50% !important;
+      height: 50% !important;
       object-fit: cover;
       right: auto !important;
+      border-radius: 50%;
     }
   }
   .experince-icon{
