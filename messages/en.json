@@ -1,0 +1,14 @@
+{
+  "HomePage": {
+    "userName": "javad boroji",
+    "jobPosition": "Front end Devlooper",
+    "description": "Since 2019, I have dedicated myself with great passion to the world of programming. Throughout this journey, I have honed my skills in various languages, including JavaScript, jQuery, React, HTML-CSS, React Next, and TypeScript.",
+    "educationTitle": "Education and Specialized Skills",
+    "educationDescription": "Bachelor of Software Engineering with a focus on web development. Proficient in creating dynamic and responsive websites, designing user-friendly interfaces, and optimizing for performance.",
+    "learningTitle": "Keen to learn and keep up-to-date",
+    "learningDescription": "As a dedicated and results-oriented professional, I am committed to delivering innovative solutions that exceed client expectations. I am always eager to learn new technologies and apply them to improve project outcomes.",
+    "workExperienceTitle": "workExperience",
+    "workExperienceDescription1": "Front-end Development Role at Akam Software: Held the position of front-end developer for 8 months, contributing to the development of multiple websites and web applications.",
+    "workExperienceDescription2": "Front-end Development Role at Resam Anahitha: Held the position of front-end developer at Resam Anahitha since September 2023, contributing to the development of an ERP system with modules such as production, office automation, and inventory."
+  }
+}

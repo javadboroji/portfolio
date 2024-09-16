@@ -8,7 +8,7 @@ function HomeWrapper() {
     <div className='container flex-wrap flex px-2'>
       <Row className='flex items-center'>
         <Description />
-        <Avatar />
+        {/* <Avatar /> */}
       </Row>
     </div>
   )

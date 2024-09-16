@@ -1,30 +1,43 @@
-import { Col } from 'antd'
-import React from 'react'
+
+import { Col } from "antd";
+import { useTranslations } from "next-intl";
+import React from "react";
 
 function Description() {
-    return (
-        <Col xs={22} lg={12} >
-            <div className='flex flex-col items-center flex-col mx-4'>
-                <p className='text-yellow-500 font-bold text-3xl text-right w-full  mb-4'> من جواد بروجی هستم</p>
-                <p className=' dark:text-white text-black font-bold text-2xl text-right w-full mb-4 '> برنامه نویس فرانت</p>
-                <p className=' dark:text-white text-black font-medium text-base text-right leading-9 ml-4 '>
-                    از سال 1398، به طور جدی با عشق و علاقه‌ی فراوان به دنیای برنامه‌نویسی آغاز به کار کردم. در طی این مسیر، تخصص‌هایم را در زبان‌های مختلفی از جمله JavaScript، jQuery، React، html-css، React Next، و TypeScript تقویت کرده‌ام.
-                    <br /> <span className='font-bold w-full'>      تحصیلات و توانمندی‌های تخصصی</span><br />
-
-                    تحصیلاتم در رشته‌ی مهندسی نرم‌افزار در مقطع کارشناسی به من این امکان را داده است که به طور عمیق‌تر به مباحث مرتبط با توسعه‌ی نرم‌افزار و برنامه‌نویسی بپردازم. با توجه به تجربه‌ی تحصیلی و حرفه‌ای‌ام، من توانایی‌هایی از قبیل توسعه‌ی وبسایت‌های پویا و ریسپانسیو، طراحی و توسعه‌ی رابط‌های کاربری دلپذیر و کارآمد، و بهینه‌سازی وب‌سایت‌ها برای عملکرد بهتر را دارم.
-
-                    <br /><span className='font-bold'>      مشتاق به یادگیری و به‌روزرسانی</span><br />
-                    من همواره به دنبال یادگیری فن‌آوری‌های جدید و به‌روز هستم و با استفاده از این دانش تازه، به بهبود عملکرد و کیفیت کارهایم می‌پردازم. هدف من از هر پروژه، ارائه‌ی راه‌حل‌های نوآورانه و بهینه به مشکلات و نیازهای مشتریان است.
-                    <br /> <span className='font-bold'> تجربه های کاری من</span><br />
-                    
-                    -به عنوان برنامه‌نویس فرانت‌اند در شرکت نرم‌افزاری آکام به مدت 8 ماه مشغول به کار بودم، مسولیت توسعه وب سایت و وب اپلکیشن ها مختلف را به همراه سایراعضابرعهده داشتم.
-                   <br></br>
-                    از شهریور 1402 تا کنون، در شرکت رسام نقش آناهیتا به عنوان برنامه‌نویس فرانت‌اند مشغول به توسعه‌ی نرم افزار ERP که شامل ماژول های تولید ،ماژول اتوماسیون اداری، ماژول انبار و... هستم.
-
-                </p>
-            </div>
-        </Col>
-    )
+  const t = useTranslations("HomePage");
+  
+  return (
+    <Col xs={22} lg={12}>
+      <div className="flex flex-col items-center flex-col mx-4">
+        <p className="text-yellow-500 font-bold text-3xl text-right w-full  mb-4">
+          {" "}
+          {t("userName")}
+        </p>
+        <p className=" dark:text-white text-black font-bold text-2xl text-right w-full mb-4 ">
+            {t("jobPosition")}
+        </p>
+        <p className=" dark:text-white text-black font-medium text-base text-right leading-9 ml-4 ">
+            {t("description")}
+          <br />{" "}
+          <span className="font-bold w-full">
+            {" "}
+            {t("educationTitle")}
+          </span>
+          <br />
+          {t("educationDescription")}
+          <br />
+          <span className="font-bold">{t("learningTitle")} </span>
+          <br />
+          {t("learningDescription")}
+          <br /> <span className="font-bold"> {t("workExperienceTitle")}</span>
+          <br />
+          {t("workExperienceDescription1")}
+          <br></br>
+          {t("workExperienceDescription2")}
+        </p>
+      </div>
+    </Col>
+  );
 }
 
-export default Description
+export default Description;
