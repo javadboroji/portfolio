@@ -1,4 +1,10 @@
 {
+  "Navgiate":{
+    "navHome":"Home",
+    "navAbout":"About Me",
+    "navExamples":"Examples of my work",
+    "navContact":"Conatact Me"
+  },
   "HomePage": {
     "userName": "javad boroji",
     "jobPosition": "Front end Devlooper",
@@ -10,5 +16,50 @@
     "workExperienceTitle": "workExperience",
     "workExperienceDescription1": "Front-end Development Role at Akam Software: Held the position of front-end developer for 8 months, contributing to the development of multiple websites and web applications.",
     "workExperienceDescription2": "Front-end Development Role at Resam Anahitha: Held the position of front-end developer at Resam Anahitha since September 2023, contributing to the development of an ERP system with modules such as production, office automation, and inventory."
+  },
+  "AboutPage": {
+    "pageTitle": "About",
+    "MeTitle": "Me",
+    "userName": "javad",
+    "lastName": "boroji",
+    "age": "27",
+    "country": "Iran",
+    "remoteWork": "Yes",
+    "address": "Tehran",
+    "phone": "+98-9392409359",
+    "email": "javadboroji2222@gmail.com",
+    "socila": "",
+    "language": "englishe",
+    "PersonalInformationTitle": "Personal information",
+    "firstNameTitle": "firstName",
+    "lastNameTitle": "lastName",
+    "ageTitle": "Age",
+    "countryTitle": "country",
+    "remoteWorkTitle": "remoteWork",
+    "addresTitle": "Address",
+    "phoneTitle": "Phone",
+    "emailTitle": "Emial",
+    "linkedinTitle": "linkedin",
+    "languageTitle": "language",
+    "PropertyCardTitle": "Completed projects",
+    "PropertyCardTitle2": "work experience",
+    "PropertyCardTitle3": "work history",
+    "PropertyCardTitle4": "Ongoing projects",
+    "mySkillsTitle": "my skills",
+    "BackgroundAndEducationTitle": "Background and education",
+    "experienceTime": "8 months",
+    "experienceCompany": "Akam",
+    "experienceJobPosition": "Front End",
+    "experienceTime2": "From September 2023 until now",
+    "experienceCompany2": "Rasam",
+    "educationTime": "2017-2021",
+    "UniversityName": "sadra",
+    "fieldOfStudy": "Bachelor of computer-software engineering"
+  },
+  "Projects":{
+    "rash":"Video sales site",
+    "danzhe":"Danje multilingual site",
+    "rasam":"Rasam Naghshe Website",
+    "Imdb":" video IMDB Website(Project)"
   }
 }

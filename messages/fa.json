@@ -1,4 +1,10 @@
 {
+  "Navgiate":{
+    "navHome":"خانه",
+    "navAbout":"درباره من",
+    "navExamples":"نموه کارهای من",
+    "navContact":"تماس با من"
+  },
   "HomePage": {
     "userName": "جواد بروجی",
     "jobPosition": "برنامه نویس فرانت ",
@@ -10,5 +16,52 @@
     "workExperienceTitle": "تجربه های کاری من",
     "workExperienceDescription1": "  -به عنوان برنامه‌نویس فرانت‌اند در شرکت نرم‌افزاری آکام به مدت 8 ماه مشغول به کار بودم، مسولیت توسعه وب سایت و وب اپلکیشن ها مختلف را به همراه سایراعضابرعهده داشتم.",
     "workExperienceDescription2": "از شهریور 1402 تا کنون، در شرکت رسام نقش آناهیتا به عنوان برنامه‌نویس  فرانت‌اند مشغول به توسعه‌ی نرم افزار ERP که شامل ماژول های تولید ،ماژول اتوماسیون اداری، ماژول انبار و... هستم."
+  },
+  "AboutPage":{
+    "pageTitle":"درباره",
+    "MeTitle":"من",
+    "userName":"جواد",
+    "lastName":"بروجی",
+    "age":"27",
+    "country":"ایران",
+    "remoteWork":"بله",
+    "address":"تهران",
+    "phone":"09392409359",
+    "email":"javadboroji2222@gmail.com",
+    "socila":"",
+    "language":"انگلیسی",
+    "PersonalInformationTitle":"اطلاعات شخصی",
+    "firstNameTitle":"نام",
+    "lastNameTitle":"نام خانوادگی",
+    "ageTitle":"سن",
+    "countryTitle":"کشور",
+    "remoteWorkTitle":"دورکاری",
+    "addresTitle":"آدرس",
+    "phoneTitle":"تلفن",
+    "emailTitle": "ایمیل",
+    "linkedinTitle":"لینکدین",
+    "languageTitle":"زبان",
+    "PropertyCardTitle":"پروژه انجام شدخ",
+     "PropertyCardTitle2":"سال تجربه کار",
+     "PropertyCardTitle3":"سال سابقه کار",
+     "PropertyCardTitle4":"پروژه ه های درحال انجام",
+     "mySkillsTitle":"مهارت های من",
+     "BackgroundAndEducationTitle":"سوابق و تحصیلات ",
+     "experienceTime":"8 ماه",
+     "experienceCompany":"شرکت نرم افزاری آکام",
+     "experienceJobPosition":"برنامه نویس فرانت",
+     "experienceTime2":"از شهریور 1402 تا اکنون",
+     "experienceCompany2":"رسام نقش آناهیتا",
+     "experienceJobPosition2":"برنامه نویس فرانت",
+     "educationTime":"1395-1399",
+     "UniversityName":"دانشگاه صدرالمتاالهین",
+     "fieldOfStudy":"کارشناسی مهندسی کامپیوتر-نرم افزار"
+
+  },
+  "Projects":{
+    "rash":"سایت فروش ویدیو راش",
+    "danzhe":"سایت چند زبانه دانژه",
+    "rasam":"سایت شرکت رسام نقش آناهیتا",
+    "Imdb":"وب سایت ویدیویی IMDB"
   }
 }

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import "./../globals.css";
 import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 
@@ -18,11 +17,10 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} dir="rtl">
-        <NextIntlClientProvider messages={messages}>
-
-          <body>{children}</body>
-        </NextIntlClientProvider>
+    <html lang={locale} dir={locale === "fa" ? "rtl" : "ltr"}>
+      <NextIntlClientProvider messages={messages}>
+        <body>{children}</body>
+      </NextIntlClientProvider>
     </html>
   );
 }

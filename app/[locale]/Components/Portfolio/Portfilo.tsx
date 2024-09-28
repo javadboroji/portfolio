@@ -1,32 +1,34 @@
 import { Col, Flex, Row } from 'antd'
 import React from 'react'
-import rash from '../../../public/rash.png';
-import danghe from '../../../public/dan.png'
-import rasam from '../../../public/rasam.png'
-import movie from '../../../public/movie.png'
+import rash from '../../../../public/rash.png';
+import danghe from '../../../../public/dan.png'
+import rasam from '../../../../public/rasam.png'
+import movie from '../../../../public/movie.png'
 import Image from 'next/image'
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function Portfilo() {
+    const t =useTranslations("Projects")
     const projects = [{
         img: rash,
         url: 'https://rash.manafund.ir',
-        title: 'سایت فروش ویدیو راش'
+        title: t("rash")
     },
     {
         img: danghe,
         url: 'https://danzhefilm.com ',
-        title: ' سایت چند زبانه دانژه'
+        title: t("danzhe")
     },
     {
         img: rasam,
         url: 'http://rasamflexo.com/ ',
-        title: 'سایت شرکت رسام نقش آناهیتا'
+        title: t("rasam")
     },
     {
         img: movie,
         url: 'https://movie-tmdb-type-script.vercel.app/ ',
-        title: 'پروژه ویدیوهای IMDB'
+        title: t("Imdb")
     }
     ]
     return (

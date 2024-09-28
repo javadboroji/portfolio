@@ -3,6 +3,7 @@ import { Button } from 'antd';
 import React, { useEffect, useState } from 'react'
 import { FaMoon } from "react-icons/fa";
 import { FaSun } from "react-icons/fa6";
+import LanSelect from './LanSelect/LanSelect';
 
 interface themeProps{
   themeDark: boolean;
@@ -36,10 +37,11 @@ const ThemeColorCustom: React.FC<themeProps>=({themeDark,setThemeDark})=> {
 
   return (
     <div className='relative'>
-      <div className="fixed lg:top-8 top-3 right-0 lg:right-8 z-50">
+      <div className="fixed lg:top-8 top-3 right-0 lg:right-8 z-50 flex">
       <button onClick={themChangeHandler}>
         {themeDark ? <FaSun fontSize={'24'} color='#fff' /> : <FaMoon fontSize={'24'} />}
       </button>
+      <LanSelect />
     </div>
     </div>
   )

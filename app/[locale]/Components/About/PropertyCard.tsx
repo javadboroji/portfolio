@@ -1,22 +1,25 @@
+"use client"
 import { Col, Row } from 'antd'
+import { useTranslations } from 'next-intl'
 import React from 'react'
 
 function PropertyCard() {
+     const t=useTranslations("AboutPage")
     const property=[
         {
-            title:'پروژه انجام شده',
+            title:t("PropertyCardTitle"),
             value:'+12'
         },
         {
-            title:'سال تجربه کار',
+            title:t("PropertyCardTitle2"),
             value:'+4'
         },
         {
-            title:'سال سابقه کار',
+            title:t("PropertyCardTitle3"),
             value:'+2'
         },
         {
-            title:'پروژه های درحال انجام',
+            title:t("PropertyCardTitle4"),
             value:'+3'
         }
     ]

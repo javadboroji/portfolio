@@ -30,7 +30,7 @@ p,span,a,h1,h2,h3,h4,h5,h6{
   font-family: 'Almarai' !important;
 
 }
-.avatar-bg{
+html[lang="fa"] .avatar-bg{
   position: fixed;
   height: 200%;
   width: 100%;
@@ -38,6 +38,15 @@ p,span,a,h1,h2,h3,h4,h5,h6{
   left: -83%;
   top: -50%;
   background-color: #ffb400;
+}
+html[lang="en"] .avatar-bg{
+  transform: rotate(-15deg);
+  right: -83%;
+  top: -50%;
+  background-color: #ffb400;
+  position: fixed;
+  height: 200%;
+  width: 100%;
 }
 .avatar-box{
   position: relative;
