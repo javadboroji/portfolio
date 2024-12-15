@@ -20,7 +20,7 @@ function LanSelect() {
     <>
       <Select
         defaultValue={locale}
-        className="bg-transparent mx-4"
+        className="bg-transparent mx-4 "
         style={{ backgroundColor: "transparent" }}
         //loading
         onChange={handleChange}
