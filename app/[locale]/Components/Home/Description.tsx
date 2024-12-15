@@ -1,4 +1,4 @@
-
+"use client"
 import { Col } from "antd";
 import { useLocale, useTranslations } from "next-intl";
 import React from "react";

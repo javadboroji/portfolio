@@ -1,4 +1,4 @@
-'use clie'
+'use client'
 import Image from 'next/image'
 import React,{useEffect} from 'react'
 import avatar from'@/public/123.jpg'
