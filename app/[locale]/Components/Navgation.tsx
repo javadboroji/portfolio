@@ -5,25 +5,26 @@ import { FaUser } from "react-icons/fa";
 import { BsBagFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { useLocale, useTranslations } from "next-intl";
+import useActiveLink from "./Hooks/useActiveLink";
+import Link from "next/link";
 
-interface NavgationProps {
-  activeItem: string;
-  setActiveItem: React.Dispatch<React.SetStateAction<string>>;
-}
-const Navgation: React.FC<NavgationProps> = ({ setActiveItem, activeItem }) => {
+const Navgation = () => {
   const [navgationHover, setNavgationHover] = useState("");
+
+  const { activeItem, setActiveItem } = useActiveLink();
+
   const t = useTranslations("Navgiate");
   const local = useLocale();
+
   const hoverItem = (id: string) => {
     setNavgationHover(id);
   };
+
   const clearState = () => {
     setNavgationHover("");
   };
 
-  const changeActiveNav = (name: string) => {
-    setActiveItem(name);
-  };
+
   useEffect(() => {}, [navgationHover]);
 
   return (
@@ -35,14 +36,15 @@ const Navgation: React.FC<NavgationProps> = ({ setActiveItem, activeItem }) => {
       <div
         onMouseEnter={() => hoverItem("home")}
         onMouseLeave={clearState}
-        className={` flex items-center p-4 rounded-full ${
+        className={` flex items-center p-3 rounded-full ${
           activeItem === "home" ? "bg-yellow-500" : "bg-zinc-900"
         } hover:bg-yellow-500 mx-2 lg:mx-0 lg:mb-3`}
       >
-        <button onClick={() => changeActiveNav("home")}>
-          {" "}
-          <FaHome fontSize={21} color="#fff" />
-        </button>
+        <Link href={`/${local}/`}>
+        
+            {" "}
+            <FaHome fontSize={18} color="#fff" />
+        </Link>
         {navgationHover === "home" ? (
           <span
             data-aos={navgationHover === "home" ? "fade-left" : ""}
@@ -58,16 +60,16 @@ const Navgation: React.FC<NavgationProps> = ({ setActiveItem, activeItem }) => {
       </div>
 
       <div
-        onMouseEnter={() => hoverItem("about")}
+        onMouseEnter={() => hoverItem(`about`)}
         onMouseLeave={clearState}
-        className={`flex items-center p-4 rounded-full ${
+        className={`flex items-center p-3 rounded-full ${
           activeItem === "about" ? "bg-yellow-500" : "bg-zinc-900"
         } hover:bg-yellow-500  mx-2 lg:mx-0 lg:mb-3`}
       >
-        <button onClick={() => changeActiveNav("about")}>
-          {" "}
-          <FaUser fontSize={21} color="#fff" />
-        </button>
+        <Link href={`/${local}/about`}>
+            {" "}
+            <FaUser fontSize={18} color="#fff" />
+        </Link>
         {navgationHover === "about" ? (
           <span
             data-aos={navgationHover === "about" ? "fade-left" : ""}
@@ -83,16 +85,17 @@ const Navgation: React.FC<NavgationProps> = ({ setActiveItem, activeItem }) => {
       </div>
 
       <div
-        onMouseEnter={() => hoverItem("portfolio")}
+        onMouseEnter={() => hoverItem(`portfolio`)}
         onMouseLeave={clearState}
-        className={` flex items-center p-4 rounded-full ${
+        className={` flex items-center p-3 rounded-full ${
           activeItem === "portfolio" ? "bg-yellow-500" : "bg-zinc-900"
         } hover:bg-yellow-500 mx-2 lg:mx-0 lg:mb-3`}
       >
-        <button onClick={() => changeActiveNav("portfolio")}>
-          {" "}
-          <BsBagFill fontSize={21} color="#fff" />
-        </button>
+        <Link href={`/${local}/portfolio`}>
+      
+            <BsBagFill fontSize={18} color="#fff" />
+        </Link>
+
         {navgationHover === "portfolio" ? (
           <span
             data-aos={navgationHover === "portfolio" ? "fade-left" : ""}
@@ -110,14 +113,15 @@ const Navgation: React.FC<NavgationProps> = ({ setActiveItem, activeItem }) => {
       <div
         onMouseEnter={() => hoverItem("contact")}
         onMouseLeave={clearState}
-        className={`flex items-center p-4 rounded-full ${
+        className={`flex items-center p-3 rounded-full ${
           activeItem === "contact" ? "bg-yellow-500" : "bg-zinc-900"
         } hover:bg-yellow-500 mx-2 lg:mx-0 lg:mb-3`}
       >
-        <button onClick={() => changeActiveNav("contact")}>
-          {" "}
-          <MdEmail fontSize={21} color="#fff" />
-        </button>
+        <Link href={`/${local}/contact`} >
+       
+            <MdEmail fontSize={18} color="#fff" />
+        </Link>
+
         {navgationHover === "contact" ? (
           <span
             data-aos={navgationHover === "contact" ? "fade-left" : ""}
