@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./../globals.css";
 import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import { MainContextProvider } from "./context/MainContext";
+import ThemLayout from "./ThemLayout";
+import { ConfigProvider } from "antd";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +22,12 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir={locale === "fa" ? "rtl" : "ltr"}>
       <NextIntlClientProvider messages={messages}>
-        <body>{children}</body>
+        <body>
+          {" "}
+          <ConfigProvider direction="rtl">
+            <ThemLayout>{children} </ThemLayout>
+          </ConfigProvider>
+        </body>
       </NextIntlClientProvider>
     </html>
   );
