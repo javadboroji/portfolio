@@ -1,6 +1,7 @@
 import { Col } from "antd";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 import React from "react";
 
 async function PersonalInfo() {
@@ -75,8 +76,8 @@ async function PersonalInfo() {
         <div className="flex-col lg:flex w-full mb-6">
           <div className="dark:text-gray-400 mb-3 lg:mb-0  text-xl w-1/2">
             {" "}
-            {t("linkedinTitle")} :
-            <span className="dark:text-white"> {aboutRes.socila}</span>
+            {t("linkedinTitle")} 
+           
           </div>
           <div className="dark:text-gray-400  text-xl w-1/2">
             {" "}

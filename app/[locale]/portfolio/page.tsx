@@ -3,6 +3,10 @@ import rash from "../../../public/rash.png";
 import danghe from "../../../public/dan.png";
 import rasam from "../../../public/rasam.png";
 import movie from "../../../public/movie.png";
+import erp from "../../../public/erp.png";
+import shop from "../../../public/shop.png";
+import babak from "../../../public/babak.png";
+
 import Image from "next/image";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
@@ -29,6 +33,21 @@ const portfolio = async () => {
       img: movie,
       url: "https://movie-tmdb-type-script.vercel.app/ ",
       title: t("Imdb"),
+    },
+    {
+      img: erp,
+      url: "http://rasamflexo.ir/ ",
+      title: t("erp"),
+    },
+    {
+      img: shop,
+      url: "https://shop-co-dun.vercel.app/",
+      title: t("shop"),
+    },
+    {
+      img: babak,
+      url: "http://babak-mfg.ir/en",
+      title: t("babak"),
     },
   ];
   return (

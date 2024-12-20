@@ -28,7 +28,7 @@
     "address": "Tehran",
     "phone": "+98-9392409359",
     "email": "javadboroji2222@gmail.com",
-    "socila": "",
+    "socila": "https://www.linkedin.com/in/javad-boroji-6725201ab/",
     "language": "englishe",
     "PersonalInformationTitle": "Personal information",
     "firstNameTitle": "firstName",
@@ -50,8 +50,10 @@
     "experienceTime": "8 months",
     "experienceCompany": "Akam",
     "experienceJobPosition": "Front End",
+    "experienceJobDescription": "Design and implementation of multilingual and responsive websites. Development and improvement of store pages and online payment systems for commercial websites, with a focus on enhancing user experience (UX) and optimizing performance. Collaboration in the design and implementation of custom CRM systems.",
     "experienceTime2": "From September 2023 until now",
     "experienceCompany2": "Rasam",
+    "experienceJobDescription2": "Participated in the development of a Customer Relationship Management (CRM) system using the React framework. This system includes various modules such as production, inventory, orders, customers, etc., which are continuously expanding and optimizing. Some of my tasks and achievements include: Implementation and Improvement of Software Base Information: Managed access (UI access) and token-based authentication (JWT) to ensure security and access to system resources. Design and Development of Online Customer Chat Module: Utilized SignalR to enhance real-time communication and speed up responses to customer requests. Implementation of Invoice and Proforma Invoice Module: Used Stimulsoft Reports to create accurate and customizable financial reports for users. Development and Improvement of Production Module: Focused on optimizing performance and better managing data and production processes.",
     "educationTime": "2017-2021",
     "UniversityName": "sadra",
     "fieldOfStudy": "Bachelor of computer-software engineering"
@@ -60,6 +62,10 @@
     "rash":"Video sales site",
     "danzhe":"Danje multilingual site",
     "rasam":"Rasam Naghshe Website",
-    "Imdb":" video IMDB Website(Project)"
+    "Imdb":" video IMDB Website(Project)",
+    "erp":"Rasam Naghshe CRM",
+    "shop":"E-commerce Website",
+     "babak": "Babak Diemaking Website"
+
   }
 }

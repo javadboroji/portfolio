@@ -24,12 +24,11 @@ const Navgation = () => {
     setNavgationHover("");
   };
 
-
   useEffect(() => {}, [navgationHover]);
 
   return (
     <div
-      className={`flex items-start lg:flex-col fixed top-[5%] lg:top-[30%] z-10 right-auto  left-auto  ${
+      className={`flex items-start lg:flex-col fixed dark:bg-white bg-black dark:lg:bg-transparent lg:bg-transparent w-full justify-center p-3 bottom-[0%] lg:top-[5%] lg:top-[30%] z-10 right-auto  left-auto  ${
         local === "fa" ? "lg:right-8" : "lg:left-8"
       }`}
     >
@@ -41,9 +40,8 @@ const Navgation = () => {
         } hover:bg-yellow-500 mx-2 lg:mx-0 lg:mb-3`}
       >
         <Link href={`/${local}/`}>
-        
-            {" "}
-            <FaHome fontSize={18} color="#fff" />
+          {" "}
+          <FaHome fontSize={18} color="#fff" />
         </Link>
         {navgationHover === "home" ? (
           <span
@@ -67,8 +65,8 @@ const Navgation = () => {
         } hover:bg-yellow-500  mx-2 lg:mx-0 lg:mb-3`}
       >
         <Link href={`/${local}/about`}>
-            {" "}
-            <FaUser fontSize={18} color="#fff" />
+          {" "}
+          <FaUser fontSize={18} color="#fff" />
         </Link>
         {navgationHover === "about" ? (
           <span
@@ -92,8 +90,7 @@ const Navgation = () => {
         } hover:bg-yellow-500 mx-2 lg:mx-0 lg:mb-3`}
       >
         <Link href={`/${local}/portfolio`}>
-      
-            <BsBagFill fontSize={18} color="#fff" />
+          <BsBagFill fontSize={18} color="#fff" />
         </Link>
 
         {navgationHover === "portfolio" ? (
@@ -117,9 +114,8 @@ const Navgation = () => {
           activeItem === "contact" ? "bg-yellow-500" : "bg-zinc-900"
         } hover:bg-yellow-500 mx-2 lg:mx-0 lg:mb-3`}
       >
-        <Link href={`/${local}/contact`} >
-       
-            <MdEmail fontSize={18} color="#fff" />
+        <Link href={`/${local}/contact`}>
+          <MdEmail fontSize={18} color="#fff" />
         </Link>
 
         {navgationHover === "contact" ? (
