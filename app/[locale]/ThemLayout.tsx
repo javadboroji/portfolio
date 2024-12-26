@@ -1,13 +1,26 @@
-"use client"
-import React, { ReactNode } from "react";
+"use client";
+import React, { ReactNode, useEffect, useState } from "react";
 import ThemeColorCustom from "./Components/ThemeColorCustom";
 import { Row } from "antd";
 import Navgation from "./Components/Navgation";
 import { MainContextProvider } from "./context/MainContext";
+import { usePathname } from "next/navigation";
 
 const ThemLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
+  const path = usePathname();
+  const [isPanle, setIsPanle] = useState(false);
+
+  useEffect(() => {
+    if (path === "/fa/dashboard" || path === "/en/dashboard") {
+      setIsPanle(true);
+    } else {
+      setIsPanle(false);
+    }
+  }, [path]);
+
   return (
     <MainContextProvider>
+      {!isPanle ? (
         <main className="bg-white dark:bg-black min-h-screen">
           <ThemeColorCustom />
 
@@ -16,9 +29,12 @@ const ThemLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
               <Navgation />
             </div>
             <div className="avatar-bg "></div>
-          {children}
+            {children}
           </Row>
         </main>
+      ) : (
+        children
+      )}
     </MainContextProvider>
   );
 };

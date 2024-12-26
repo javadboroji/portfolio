@@ -5,6 +5,12 @@ import { NextIntlClientProvider } from "next-intl";
 import { MainContextProvider } from "./context/MainContext";
 import ThemLayout from "./ThemLayout";
 import { ConfigProvider } from "antd";
+type RootLayoutProps = {
+  children: React.ReactNode;
+  locale: string;
+  messages: Record<string, string>;
+  pathname: string;
+};
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,19 +19,17 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  pathname,
+}: RootLayoutProps) {
   const locale = await getLocale();
   const messages = await getMessages();
-
   return (
     <html lang={locale} dir={locale === "fa" ? "rtl" : "ltr"}>
       <NextIntlClientProvider messages={messages}>
         <body>
           {" "}
           <ConfigProvider direction="rtl">
-            <ThemLayout>{children} </ThemLayout>
+            <ThemLayout>{children}</ThemLayout>
           </ConfigProvider>
         </body>
       </NextIntlClientProvider>

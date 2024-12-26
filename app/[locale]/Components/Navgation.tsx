@@ -7,10 +7,11 @@ import { MdEmail } from "react-icons/md";
 import { useLocale, useTranslations } from "next-intl";
 import useActiveLink from "./Hooks/useActiveLink";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navgation = () => {
   const [navgationHover, setNavgationHover] = useState("");
-
+  const pathname = usePathname()
   const { activeItem, setActiveItem } = useActiveLink();
 
   const t = useTranslations("Navgiate");
@@ -25,10 +26,16 @@ const Navgation = () => {
   };
 
   useEffect(() => {}, [navgationHover]);
-
+  useEffect(() => {
+      const path=pathname.split("/");
+      setActiveItem(path[2])
+      console.log(path[2]);
+      
+  }, [pathname])
+  
   return (
     <div
-      className={`flex items-start lg:flex-col fixed dark:bg-white bg-black dark:lg:bg-transparent lg:bg-transparent w-full justify-center p-3 bottom-[0%] lg:top-[5%] lg:top-[30%] z-10 right-auto  left-auto  ${
+      className={`flex items-start lg:flex-col fixed dark:bg-white bg-black dark:lg:bg-transparent lg:bg-transparent w-full lg:w-auto justify-center p-3 bottom-[0%] lg:top-[5%] lg:top-[30%] z-10   ${
         local === "fa" ? "lg:right-8" : "lg:left-8"
       }`}
     >
@@ -39,7 +46,7 @@ const Navgation = () => {
           activeItem === "home" ? "bg-yellow-500" : "bg-zinc-900"
         } hover:bg-yellow-500 mx-2 lg:mx-0 lg:mb-3`}
       >
-        <Link href={`/${local}/`}>
+        <Link href={`/${local}/home`}>
           {" "}
           <FaHome fontSize={18} color="#fff" />
         </Link>
