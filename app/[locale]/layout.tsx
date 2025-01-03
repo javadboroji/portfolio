@@ -7,9 +7,7 @@ import ThemLayout from "./ThemLayout";
 import { ConfigProvider } from "antd";
 type RootLayoutProps = {
   children: React.ReactNode;
-  locale: string;
-  messages: Record<string, string>;
-  pathname: string;
+
 };
 
 export const metadata: Metadata = {
@@ -19,7 +17,6 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  pathname,
 }: RootLayoutProps) {
   const locale = await getLocale();
   const messages = await getMessages();

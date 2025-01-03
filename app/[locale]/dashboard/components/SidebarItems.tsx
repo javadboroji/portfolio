@@ -34,9 +34,9 @@ async function SidebarItems() {
         <UserInfoSidebar />
       </span>
       <ul className="p-0 h-full">
-        {items?.map((item) => {
+        {items?.map((item,i) => {
           return (
-            <li className="p-2 my-4">
+            <li key={i} className="p-2 my-4">
               <Link href={item.link} className="text-[#e5e5e5] font-medium">
                 {item.title}
               </Link>

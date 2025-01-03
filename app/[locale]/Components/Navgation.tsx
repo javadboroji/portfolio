@@ -25,7 +25,6 @@ const Navgation = () => {
     setNavgationHover("");
   };
 
-  useEffect(() => {}, [navgationHover]);
   useEffect(() => {
       const path=pathname.split("/");
       setActiveItem(path[2])
