@@ -11,7 +11,9 @@ const ThemLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [isPanle, setIsPanle] = useState(false);
 
   useEffect(() => {
-    if (path === "/fa/dashboard" || path === "/en/dashboard") {
+    const dashboardPaths = [/^\/fa\/dashboard(\/|\/.*)?$/, /^\/en\/dashboard(\/|\/.*)?$/];
+    const isDashboardPath = dashboardPaths.some(regex => regex.test(path));
+    if (isDashboardPath) {
       setIsPanle(true);
     } else {
       setIsPanle(false);
