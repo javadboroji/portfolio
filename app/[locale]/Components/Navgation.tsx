@@ -34,7 +34,7 @@ const Navgation = () => {
   
   return (
     <div
-      className={`flex items-start lg:flex-col fixed dark:bg-white bg-black dark:lg:bg-transparent lg:bg-transparent w-full lg:w-auto justify-center p-3 bottom-[0%] lg:top-[5%] lg:top-[30%] z-10   ${
+      className={`flex items-start lg:flex-col fixed dark:bg-black  bg-white dark:lg:bg-transparent lg:bg-transparent w-full lg:w-auto justify-center p-3 bottom-[0%] lg:top-[5%] lg:top-[30%] z-10   ${
         local === "fa" ? "lg:right-8" : "lg:left-8"
       }`}
     >

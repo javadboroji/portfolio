@@ -13,7 +13,7 @@ function LanSelect() {
     const pathList = path.split("/");
     const newUrl = pathList.map((path, index) => (index === 1 ? label : path));
     const newPath = newUrl.join("/");
-    router.replace(`${process.env.NEXT_PUBLIC_BASE_URL_client}/${newPath}`);
+    router.replace(`${process.env.NEXT_PUBLIC_BASE_URL_client}${newPath}`);
   };
 
   return (

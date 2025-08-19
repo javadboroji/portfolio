@@ -51,7 +51,7 @@ const portfolio = async () => {
     },
   ];
   return (
-    <div className="lg:container">
+    <div className="lg:container px-8 md:w-[65%] w-full">
       <span className="dark:text-white mx-auto mt-12  w-full block text-center text-4xl py-4">
         {" "}
         نمونه کار های من
@@ -59,19 +59,18 @@ const portfolio = async () => {
       <Row
         className="flex-col lg:flex-row"
         style={{ display: "flex", margin: "4rem 0" }}
-        gutter={[48, 48]}
+        gutter={[32,32]}
       >
         {projects?.map((item, i) => (
           <Col key={i} xs={24} lg={12} className="mb-4 lg:mb-0">
-            <div className="relative overflow-hidden w-full h-full pt-[55%] animation-deley rounded-lg">
+            <div className="relative overflow-hidden w-full h-full md:min-h-[15rem] min-h-[10rem] animation-deley rounded-lg">
               <Link href={item.url}>
                 <Image
                   fill
                   src={item.img}
                   alt={item.title}
                   objectFit={"cover"}
-                  style={{ padding: "0" }}
-                  className="hover:scale-110 hover:blur-sm hover:animation-deley animation-deley"
+                  className=" p-0 w-full h-full  hover:scale-110 hover:blur-sm hover:animation-deley animation-deley"
                 />
               </Link>
             </div>

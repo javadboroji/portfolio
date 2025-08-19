@@ -18,7 +18,7 @@ const About = async () => {
         <Row style={{ display: "flex" }}>
           <PersonalInfo />
           <Col xs={24} lg={10}>
-            {/* <PropertyCard /> */}
+       
           </Col>
         </Row>
         <Row

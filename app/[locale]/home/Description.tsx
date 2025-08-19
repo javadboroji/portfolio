@@ -9,7 +9,7 @@ function Description() {
   return (
     <Col xs={22} lg={12}>
         <div className="flex flex-col items-center flex-col mx-4">
-        <p className={`text-yellow-500 font-bold text-3xl ${loca==="fa"? "text-right":"text-left"} w-full  mb-4`}>
+        <p className={`text-yellow-500 font-bold text-3xl justify-start ${loca==="fa"? "text-right":"text-left"} w-full  mb-4`}>
           {" "}
           {t("userName")}
         </p>

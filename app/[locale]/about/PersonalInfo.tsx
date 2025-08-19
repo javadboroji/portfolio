@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 
 async function PersonalInfo() {
+  const curentDate = new Date;
   const t = await getTranslations("AboutPage");
   const aboutRes = {
     name: t("userName"),
@@ -38,36 +39,36 @@ async function PersonalInfo() {
           </div>
         </div>
         <div className="flex-col lg:flex w-full mb-6">
-          <div className="dark:text-gray-400  mb-3 lg:mb-0 text-xl w-1/2">
+          <div className="dark:text-gray-400  mb-3 lg:mb-0 text-xl lg:w-1/2">
             {" "}
             {t("ageTitle")} :
-            <span className="dark:text-white"> {aboutRes.age}</span>
+            <span className="dark:text-white"> {curentDate.getFullYear() - 1997}</span>
           </div>
-          <div className="dark:text-gray-400  text-xl w-1/2">
+          <div className="dark:text-gray-400  text-xl lg:w-1/2">
             {" "}
             {t("countryTitle")} :
             <span className="dark:text-white"> {aboutRes.country}</span>
           </div>
         </div>
         <div className="flex-col lg:flex w-full mb-6">
-          <div className="dark:text-gray-400 mb-3 lg:mb-0 text-xl w-1/2">
+          <div className="dark:text-gray-400 mb-3 lg:mb-0 text-xl lg: w-1/2">
             {" "}
             {t("remoteWorkTitle")} :
             <span className="dark:text-white"> {aboutRes.remoteWork}</span>
           </div>
-          <div className="dark:text-gray-400  text-xl w-1/2">
+          <div className="dark:text-gray-400  text-xl lg:w-1/2">
             {" "}
             {t("addresTitle")} :
             <span className="dark:text-white"> {aboutRes.address}</span>
           </div>
         </div>
         <div className="flex-col lg:flex w-full mb-6">
-          <div className="dark:text-gray-400  mb-3 lg:mb-0 text-xl w-1/2">
+          <div className="dark:text-gray-400  mb-3 lg:mb-0 text-xl lg:w-1/2">
             {" "}
-            {t("phoneTitle")} :
+            <span className="dark:text-white">  {t("phoneTitle")}</span> :
             <span className="dark:text-white"> {aboutRes.phone}</span>
           </div>
-          <div className="dark:text-gray-400  text-xl w-1/2">
+          <div className="dark:text-gray-400  text-xl lg:w-1/2">
             {" "}
             {t("emailTitle")} :
             <span className="dark:text-white"> {aboutRes.email}</span>
@@ -76,8 +77,8 @@ async function PersonalInfo() {
         <div className="flex-col lg:flex w-full mb-6">
           <div className="dark:text-gray-400 mb-3 lg:mb-0  text-xl w-1/2">
             {" "}
-            {t("linkedinTitle")} 
-           
+            {t("linkedinTitle")}
+
           </div>
           <div className="dark:text-gray-400  text-xl w-1/2">
             {" "}
